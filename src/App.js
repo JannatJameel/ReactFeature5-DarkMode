@@ -38,7 +38,7 @@ function App() {
     <ThemeProvider theme={currentTheme === "light"? theme.light : theme.dark}>
       <GlobalStyle />
       <ThemeButton onClick={themeSwitch} theme>
-        Dark Theme
+        {currentTheme === "light"? "Light Theme" : "Dark Theme"}
       </ThemeButton>
       <Home />
       <CookieList />
